@@ -1,4 +1,4 @@
-package com.bot.mapper.freenow;
+package com.bot.freenow.mapper;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

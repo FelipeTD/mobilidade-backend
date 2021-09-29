@@ -10,9 +10,9 @@ import com.bot.entity.freenow.gains.GainsResponse;
 import com.bot.entity.freenow.gains.Ranges;
 import com.bot.entity.freenow.gains.RangesResponse;
 import com.bot.entity.freenow.historyReservation.ReservationHistoryResponse;
-import com.bot.mapper.freenow.GainsDatesMapper;
-import com.bot.mapper.freenow.GainsMapper;
-import com.bot.mapper.freenow.HistoryReservationMapper;
+import com.bot.freenow.mapper.GainsDatesMapper;
+import com.bot.freenow.mapper.GainsMapper;
+import com.bot.freenow.mapper.HistoryReservationMapper;
 import com.bot.entity.freenow.historyReservation.ReservationHistoryData;
 import com.bot.repository.FreeNowRepository;
 

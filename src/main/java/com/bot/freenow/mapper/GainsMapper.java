@@ -1,4 +1,4 @@
-package com.bot.mapper.freenow;
+package com.bot.freenow.mapper;
 
 import java.util.ArrayList;
 import java.util.List;
