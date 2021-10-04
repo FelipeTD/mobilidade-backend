@@ -9,7 +9,7 @@ import com.bot.entity.motorista.Motorista;
 
 public interface MotoristaRepository extends CrudRepository<Motorista, String> {
 	
-	@Query("select m from Motorista m where m.active = true")
+	@Query("select m from Motorista m")
 	List<Motorista> findDrivers();
 
 }

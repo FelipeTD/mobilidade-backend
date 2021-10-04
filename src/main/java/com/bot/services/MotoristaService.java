@@ -1,15 +1,14 @@
 package com.bot.services;
 
-import java.util.List;
-
 import com.bot.entity.motorista.Motorista;
+import com.bot.entity.motorista.MotoristaList;
 
 public interface MotoristaService {
 	
-	List<Motorista> findAllActiveDrivers();
+	MotoristaList findAllDrivers();
 	
 	Motorista salvar(Motorista motorista);
 	
-	Motorista updateMotorista(Motorista motorista);
+	MotoristaList updateMotorista(Motorista motorista);
 
 }

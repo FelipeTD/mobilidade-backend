@@ -1,7 +1,5 @@
 package com.bot.controller;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 import org.springframework.http.ResponseEntity;
@@ -11,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.bot.entity.motorista.Motorista;
+import com.bot.entity.motorista.MotoristaList;
 import com.bot.services.MotoristaService;
 
 import lombok.RequiredArgsConstructor;
@@ -22,8 +21,8 @@ public class MotoristaController {
     private final MotoristaService service;
 
     @GetMapping("/motorista/show")
-    public List<Motorista> findMotoristas() {
-        List<Motorista> motoristas = (ArrayList<Motorista>) service.findAllActiveDrivers();
+    public MotoristaList findMotoristas() {
+    	MotoristaList motoristas = service.findAllDrivers();
 
         return motoristas;
     }
@@ -40,14 +39,10 @@ public class MotoristaController {
     }
     
     @PostMapping("/motorista/status")
-    public ResponseEntity<Motorista> updateMotorista(@RequestBody Motorista motorista) {
-    	Motorista response = service.updateMotorista(motorista);
+    public MotoristaList updateMotorista(@RequestBody Motorista motorista) {
+    	MotoristaList response = service.updateMotorista(motorista);
     	
-    	if (Objects.isNull(response)) {
-    		return ResponseEntity.badRequest().build();
-    	}
-    	
-    	return ResponseEntity.ok(response);	
+    	return response;
     }
 
 }
