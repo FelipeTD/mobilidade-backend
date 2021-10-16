@@ -22,10 +22,17 @@ public class AplicativoController {
 	
 	@GetMapping("/aplicativo/show")
     public AplicativoList findAplicativos() {
-		AplicativoList response = service.findAllActiveAplicativos();
+		AplicativoList response = service.findAllAplicativos();
 
         return response;
     }
+	
+	@GetMapping("/aplicativo/ativos")
+	public AplicativoList findActiveAplicativos() {
+		AplicativoList response = service.findAllActiveAplicativos();
+		
+		return response;
+	}
 	
 	@PostMapping("/aplicativo/salvar")
     public ResponseEntity<Aplicativo> saveAplicativo(@RequestBody Aplicativo aplicativo) {

@@ -23,9 +23,20 @@ public class CadastroServiceImpl implements CadastroService {
 		CadastroList response = new CadastroList();
 		response.setCadastros(repository.findCadastros());
 		
-		Collections.sort(response.getCadastros(), Comparator.comparing(Cadastro::getCadastroId));		
+		Collections.sort(response.getCadastros(), Comparator.comparing(Cadastro::getNumeroAplicativo));		
 		
 		return response;
+		
+	}
+	
+	@Override 
+	public Cadastro salvar(Cadastro cadastro) {
+		try {
+			Cadastro response = repository.save(cadastro);
+			return response;
+		} catch (IllegalArgumentException error) {
+			return null;
+		}
 		
 	}
 

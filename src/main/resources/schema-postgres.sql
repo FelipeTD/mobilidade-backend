@@ -23,7 +23,7 @@ CREATE TABLE cadastro(
     driver_id VARCHAR(255) NOT NULL
 );
 
-CREATE TABLE registros(
+CREATE TABLE registro(
     registro_id SERIAL PRIMARY KEY,
     cadastro_id INTEGER NOT NULL,
     valor NUMERIC(5,2),
@@ -36,5 +36,5 @@ ADD CONSTRAINT fk_id_motorista FOREIGN KEY (driver_id) REFERENCES motorista(driv
 ALTER TABLE cadastro
 ADD CONSTRAINT fk_id_aplicativo FOREIGN KEY (aplicativo_id) REFERENCES aplicativo(aplicativo_id);
 
-ALTER TABLE registros
+ALTER TABLE registro
 ADD CONSTRAINT fk_id_cadastro FOREIGN KEY (cadastro_id) REFERENCES cadastro(cadastro_id);

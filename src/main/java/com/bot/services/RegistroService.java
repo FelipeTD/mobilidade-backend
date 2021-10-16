@@ -1,13 +1,13 @@
 package com.bot.services;
 
-import java.util.List;
-
-import com.bot.registros.Registros;
+import com.bot.entity.registro.Registro;
+import com.bot.entity.registro.RegistroList;
+import com.bot.entity.registro.RegistroRequest;
 
 public interface RegistroService {
 	
-	List<Registros> findRegistrosByIdAndDate(String cadastroId, String startDate, String finalDate);
+	RegistroList findAllRegistros();
 	
-	Double findTotalByRegistro(String cadastroId, String startDate, String finalDate);
+	Registro salvar(RegistroRequest registro);
 
 }

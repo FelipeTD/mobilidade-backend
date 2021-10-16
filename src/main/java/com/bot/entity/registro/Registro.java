@@ -1,9 +1,11 @@
-package com.bot.registros;
+package com.bot.entity.registro;
 
 import java.io.Serializable;
 import java.util.Calendar;
 
 import javax.persistence.*;
+
+import com.bot.entity.cadastro.Cadastro;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -15,16 +17,18 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "registros")
-public class Registros implements Serializable {
+@Table(name = "registro")
+public class Registro implements Serializable {
 	
 	private static final long serialVersionUID = 9062915818803267541L;
 	
 	@Id
-	private Long registroId;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer registroId;
 	
-	@Column(name = "cadastro_id")
-	private String cadastroId;
+	@ManyToOne
+	@JoinColumn(name="cadastro_id")
+	private Cadastro cadastro;
 	
 	@Column(name = "valor")
 	private Double valor;

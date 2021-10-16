@@ -27,6 +27,13 @@ public class MotoristaController {
         return motoristas;
     }
     
+    @GetMapping("motorista/ativos")
+    public MotoristaList findAllActiveMotoristas() {
+    	MotoristaList motoristas = service.findAllActiveDrivers();
+    	
+    	return motoristas;
+    }
+    
     @PostMapping("/motorista/salvar")
     public ResponseEntity<Motorista> saveMotorista(@RequestBody Motorista motorista) {
     	Motorista response = service.salvar(motorista);

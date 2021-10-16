@@ -5,6 +5,8 @@ import com.bot.entity.aplicativo.AplicativoList;
 
 public interface AplicativoService {
 	
+	AplicativoList findAllAplicativos();
+	
 	AplicativoList findAllActiveAplicativos();
 	
 	Aplicativo salvar(Aplicativo aplicativo);

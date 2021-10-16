@@ -19,10 +19,21 @@ public class AplicativoServiceImpl implements AplicativoService {
 	private final AplicativoRepository repository;
 	
 	@Override
-	public AplicativoList findAllActiveAplicativos() {
+	public AplicativoList findAllAplicativos() {
 		
 		AplicativoList response = new AplicativoList();
 		response.setAplicativos(repository.findAplicativos());
+		
+		Collections.sort(response.getAplicativos(), Comparator.comparing(Aplicativo::getAplicativoId));
+		
+		return response;
+	}
+	
+	@Override
+	public AplicativoList findAllActiveAplicativos() {
+		
+		AplicativoList response = new AplicativoList();
+		response.setAplicativos(repository.findAllActiveAplicativos());
 		
 		Collections.sort(response.getAplicativos(), Comparator.comparing(Aplicativo::getAplicativoId));
 		
@@ -44,7 +55,7 @@ public class AplicativoServiceImpl implements AplicativoService {
 		Aplicativo response = repository.save(aplicativo);
 		
 		if (!Objects.isNull(response)) {
-			return this.findAllActiveAplicativos();	
+			return this.findAllAplicativos();	
 		} else {
 			return null;
 		}	

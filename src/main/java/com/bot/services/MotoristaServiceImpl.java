@@ -32,6 +32,19 @@ public class MotoristaServiceImpl implements MotoristaService {
 	}
 	
 	@Override
+	public MotoristaList findAllActiveDrivers() {
+		
+		MotoristaList response = new MotoristaList();
+		
+		List<Motorista> motoristas = repository.findActiveDrivers();
+		response.setMotoristas(motoristas);
+		
+		Collections.sort(response.getMotoristas(), Comparator.comparing(Motorista::getDriverId));
+		
+		return response;	
+	}
+	
+	@Override
 	public Motorista salvar(Motorista motorista) {
 		try {
 			Motorista response = repository.save(motorista);

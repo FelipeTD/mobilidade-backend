@@ -561,81 +561,81 @@ INSERT INTO cadastro (numero_aplicativo, aplicativo_id, driver_id)
     VALUES ('1296', 8, '1296');
 
 -- UBER INSERT NA TABELA DE REGISTROS
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 0.5, '2021-09-13');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 10.27, '2021-09-14');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 6.4, '2021-09-14');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 3.38, '2021-09-14');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 8.13, '2021-09-14');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 3.5, '2021-09-14');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 4.64, '2021-09-14');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 3.18, '2021-09-15');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 2.54, '2021-09-15');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 13.44, '2021-09-15');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 11.26, '2021-09-15');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 3.34, '2021-09-15');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 8.5, '2021-09-15');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 8.22, '2021-09-15');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 9.73, '2021-09-16');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 4.48, '2021-09-16');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 4.0, '2021-09-16');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 5.19, '2021-09-16');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 4.23, '2021-09-17');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 5.86, '2021-09-17');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 2.0, '2021-09-17');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 12.2, '2021-09-17');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 7.06, '2021-09-17');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 3.36, '2021-09-17');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 5.94, '2021-09-17');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 3.19, '2021-09-17');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 4.74, '2021-09-17');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 6.5, '2021-09-18');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 10.87, '2021-09-19');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 3.45, '2021-09-19');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 20.25, '2021-09-19');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 3.52, '2021-09-19');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 3.75, '2021-09-20');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 2.25, '2021-09-20');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 6.35, '2021-09-20');
-INSERT INTO registros (cadastro_id, valor, registro_data) 
+INSERT INTO registro (cadastro_id, valor, registro_data) 
     VALUES (1, 16.45, '2021-09-20');
 
 -- SELECIONAR TOTAL UBER POR DATA
-select sum(valor) from registros 
+select sum(valor) from registro 
 where cadastro_id = 1
 and registro_data >= cast('2021-09-13' as DATE)
 and registro_data <= cast('2021-09-20' as DATE);

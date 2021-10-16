@@ -11,5 +11,8 @@ public interface MotoristaRepository extends CrudRepository<Motorista, String> {
 	
 	@Query("select m from Motorista m")
 	List<Motorista> findDrivers();
+	
+	@Query("select m from Motorista m where m.active = true")
+	List<Motorista> findActiveDrivers();
 
 }

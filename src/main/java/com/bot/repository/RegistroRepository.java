@@ -4,18 +4,12 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.data.repository.query.Param;
 
-import com.bot.registros.Registros;
+import com.bot.entity.registro.Registro;
 
-public interface RegistroRepository extends CrudRepository<Registros, Long> {
+public interface RegistroRepository extends CrudRepository<Registro, Integer> {
 	
-	@Query("select r from Registros r where r.cadastroId = :cadastroId "
-			+ "and registro_data >= cast(:startDate as date) "
-			+ "and registro_data <= cast(:finalDate as date)")
-	List<Registros> findRegistrosByIdAndDate(
-			@Param("cadastroId") String cadastroId, 
-			@Param("startDate") String startDate, 
-			@Param("finalDate") String finalDate);
+	@Query("select r from Registro r inner join r.cadastro")
+	List<Registro> findAllRegistros();
 
 }

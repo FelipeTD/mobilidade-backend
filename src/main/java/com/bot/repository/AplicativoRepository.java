@@ -11,5 +11,8 @@ public interface AplicativoRepository extends CrudRepository<Aplicativo, String>
 	
 	@Query("select a from Aplicativo a")
 	List<Aplicativo> findAplicativos();
+	
+	@Query("select a from Aplicativo a where a.active = true")
+	List<Aplicativo> findAllActiveAplicativos();
 
 }
