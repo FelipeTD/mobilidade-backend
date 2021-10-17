@@ -5,8 +5,8 @@ import java.util.Comparator;
 
 import org.springframework.stereotype.Component;
 
-import com.bot.entity.cadastro.Cadastro;
-import com.bot.entity.cadastro.CadastroList;
+import com.bot.entity.Cadastro;
+import com.bot.entity.CadastroList;
 import com.bot.repository.CadastroRepository;
 
 import lombok.RequiredArgsConstructor;

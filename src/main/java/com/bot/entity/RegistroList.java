@@ -1,4 +1,4 @@
-package com.bot.entity.registro;
+package com.bot.entity;
 
 import java.util.List;
 

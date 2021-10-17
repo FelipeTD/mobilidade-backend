@@ -1,4 +1,4 @@
-package com.bot.entity.cadastro;
+package com.bot.entity;
 
 import java.util.List;
 

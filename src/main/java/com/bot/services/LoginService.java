@@ -5,8 +5,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.bot.entity.login.ResponseLogin;
-import com.bot.entity.login.Usuario;
+import com.bot.entity.ResponseLogin;
+import com.bot.entity.Usuario;
 import com.bot.repository.LoginRepository;
 
 @RestController

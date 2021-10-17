@@ -1,7 +1,7 @@
 package com.bot.services;
 
-import com.bot.entity.motorista.Motorista;
-import com.bot.entity.motorista.MotoristaList;
+import com.bot.entity.Motorista;
+import com.bot.entity.MotoristaList;
 
 public interface MotoristaService {
 	

@@ -2,15 +2,18 @@ package com.bot.controller;
 
 import java.util.Objects;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.bot.entity.registro.Registro;
-import com.bot.entity.registro.RegistroList;
-import com.bot.entity.registro.RegistroRequest;
+import com.bot.entity.Registro;
+import com.bot.entity.RegistroList;
+import com.bot.entity.RegistroRequest;
+import com.bot.entity.Resultado;
 import com.bot.services.RegistroService;
 
 import lombok.RequiredArgsConstructor;
@@ -28,6 +31,17 @@ public class RegistroController {
         
         return response;
     }
+	
+	@GetMapping("/registro/resultados")
+	public ResponseEntity<Resultado> findResults(@RequestParam("data") String data) {
+		
+		Resultado response = service.findResults(data);
+		
+		ResponseEntity<Resultado> resultado = new ResponseEntity<Resultado>(response, HttpStatus.OK);
+		
+		return resultado;
+		
+	}
 	
 	@PostMapping("/registro")
     public ResponseEntity<Registro> saveRegistro(@RequestBody RegistroRequest registro) {

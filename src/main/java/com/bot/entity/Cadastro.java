@@ -1,4 +1,4 @@
-package com.bot.entity.cadastro;
+package com.bot.entity;
 
 import java.io.Serializable;
 
@@ -10,9 +10,6 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-
-import com.bot.entity.aplicativo.Aplicativo;
-import com.bot.entity.motorista.Motorista;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -6,8 +6,8 @@ import java.util.List;
 
 import org.springframework.stereotype.Component;
 
-import com.bot.entity.motorista.Motorista;
-import com.bot.entity.motorista.MotoristaList;
+import com.bot.entity.Motorista;
+import com.bot.entity.MotoristaList;
 import com.bot.repository.MotoristaRepository;
 
 import lombok.RequiredArgsConstructor;

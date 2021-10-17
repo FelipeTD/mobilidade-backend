@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.bot.entity.motorista.Motorista;
-import com.bot.entity.motorista.MotoristaList;
+import com.bot.entity.Motorista;
+import com.bot.entity.MotoristaList;
 import com.bot.services.MotoristaService;
 
 import lombok.RequiredArgsConstructor;

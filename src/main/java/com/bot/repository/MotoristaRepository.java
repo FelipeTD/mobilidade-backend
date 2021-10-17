@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
-import com.bot.entity.motorista.Motorista;
+import com.bot.entity.Motorista;
 
 public interface MotoristaRepository extends CrudRepository<Motorista, String> {
 	

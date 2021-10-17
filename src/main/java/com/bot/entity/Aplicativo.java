@@ -1,4 +1,4 @@
-package com.bot.entity.aplicativo;
+package com.bot.entity;
 
 import java.io.Serializable;
 

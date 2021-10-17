@@ -1,11 +1,9 @@
-package com.bot.entity.registro;
+package com.bot.entity;
 
 import java.io.Serializable;
 import java.util.Calendar;
 
 import javax.persistence.*;
-
-import com.bot.entity.cadastro.Cadastro;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

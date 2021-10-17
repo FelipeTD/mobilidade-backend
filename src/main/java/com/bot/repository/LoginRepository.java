@@ -2,8 +2,8 @@ package com.bot.repository;
 
 import org.springframework.stereotype.Component;
 
-import com.bot.entity.login.ResponseLogin;
-import com.bot.entity.login.Usuario;
+import com.bot.entity.ResponseLogin;
+import com.bot.entity.Usuario;
 
 @Component
 public class LoginRepository {

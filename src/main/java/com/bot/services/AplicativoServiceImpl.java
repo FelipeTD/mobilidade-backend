@@ -6,8 +6,8 @@ import java.util.Objects;
 
 import org.springframework.stereotype.Component;
 
-import com.bot.entity.aplicativo.Aplicativo;
-import com.bot.entity.aplicativo.AplicativoList;
+import com.bot.entity.Aplicativo;
+import com.bot.entity.AplicativoList;
 import com.bot.repository.AplicativoRepository;
 
 import lombok.RequiredArgsConstructor;

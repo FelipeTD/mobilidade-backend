@@ -1,4 +1,4 @@
-package com.bot.entity.login;
+package com.bot.entity;
 
 public class Usuario {
 	

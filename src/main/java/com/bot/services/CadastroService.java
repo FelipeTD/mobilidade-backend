@@ -1,7 +1,7 @@
 package com.bot.services;
 
-import com.bot.entity.cadastro.Cadastro;
-import com.bot.entity.cadastro.CadastroList;
+import com.bot.entity.Cadastro;
+import com.bot.entity.CadastroList;
 
 public interface CadastroService {
 	

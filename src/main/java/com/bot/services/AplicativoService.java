@@ -1,7 +1,7 @@
 package com.bot.services;
 
-import com.bot.entity.aplicativo.Aplicativo;
-import com.bot.entity.aplicativo.AplicativoList;
+import com.bot.entity.Aplicativo;
+import com.bot.entity.AplicativoList;
 
 public interface AplicativoService {
 	
